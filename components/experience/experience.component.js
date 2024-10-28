@@ -19,7 +19,7 @@ angular.module('experience')
                 $http.get('/data/education.json').then(function(res) {
                     self.education = res.data
                 })
-            }
+            } 
 
             self.select = function(tab) {
                 self.currentTab = tab
