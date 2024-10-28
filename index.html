@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="personalSite">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saralyn Leonard</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <script src="https://kit.fontawesome.com/29da9f6bf5.js" crossorigin="anonymous"></script>
+
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+
+    <script src="components/experience/experience.module.js"></script>
+    <script src="components/experience/experience.component.js"></script>
+
+    <script src="components/footer/footer.component.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Saralyn Leonard</h1>
+            <section id="header-icons">
+                <a class="header-icon" href="https://www.linkedin.com/in/saralyn-leonard-437689a4/"><i class="fa-brands fa-linkedin"></i></a>
+                <a class="header-icon" href="https://github.com/saralynleonard"><i class="fa-brands fa-github"></i></a>
+                <a class="header-icon" href="">View full resume <i class="fa-light fa-arrow-up-right-from-square"></i></a>
+            </section>
+        </div>
+    </header>
+        <div ng-view></div>
+    <footer>
+        <app-footer></app-footer>
+    </footer>
+</body>
+</html>

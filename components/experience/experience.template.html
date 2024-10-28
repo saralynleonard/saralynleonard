@@ -1,0 +1,50 @@
+<main>
+    <ul class="tabs">
+        <li ng-class="{active: $ctrl.currentTab === 'experience'}">
+            <a href="" ng-click="$ctrl.select('experience')">Experience</a>
+        </li>
+        <li ng-class="{active: $ctrl.currentTab === 'education'}">
+            <a href="" ng-click="$ctrl.select('education')">Education</a>
+        </li>
+    </ul>
+
+    <section id="experience" ng-show="$ctrl.currentTab === 'experience'">
+        <h2 class="section-title">Experience</h2>
+        <ul>
+            <div ng-repeat="experience in $ctrl.experience" class="card">
+                <li id="job" >
+                    <a href="/">{{experience.jobTitle}} | {{experience.company}}</a>
+                    <div class="date">
+                        <p><i class="fa-sharp fa-light fa-calendar-days"></i>{{experience.startDate | date}} - <span ng-if="experience.currentPosition">Present</span>{{experience.endDate | date}}</p>
+                        <p><i class="fa-sharp fa-light fa-location-dot"></i>{{experience.location}}</p>
+                    <p ng-repeat="description in experience.description">{{description}}</p>
+                    <ul class="skills">
+                        <li ng-repeat="skills in experience.skills"><i class="fa-sharp fa-light fa-tag"></i>{{skills}}</li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </section>
+
+    <section id="education" ng-show="$ctrl.currentTab === 'education'">
+        <h2 class="section-title">Education</h2>
+        <ul>
+            <div ng-repeat="education in $ctrl.education" class="card">
+                <li id="degree">
+                    <a href="">{{education.degree}} | {{education.university}}</a>
+                    <p><i class="fa-sharp fa-light fa-calendar-days"></i>{{education.startDate | date}} - <span ng-if="education.currentEd">Present</span>{{education.endDate | date}}</p>
+                    <p><i class="fa-sharp fa-light fa-location-dot"></i>{{education.location}}</p>
+                    <p>Specialization in {{education.concentration}}</p>
+                    <ul class="skills">
+                        <li ng-repeat="skills in education.skills">
+                            <i class="fa-sharp fa-light fa-tag"></i>{{skills}}
+                        </li>
+                    </ul>
+                    <ul class="links">
+                        <li ng-repeat="link in education.links" id="url"><a href="{{link.url}}" target="_blank"><i class="fa-sharp fa-light fa-link"></i>{{link.title}}</a></li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+    </section>
+</main>

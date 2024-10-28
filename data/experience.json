@@ -1,0 +1,45 @@
+[
+    {
+        "id": "1", 
+        "jobTitle": "SharePoint Developer",
+        "company": "Precise Systems, Inc.",
+        "location": "Patuxent River, MD", 
+        "startDate": "2022-01-01",
+        "currentPosition": true,
+        "description": ["Leverage SharePoint Online lists & libraries, along with Power Apps and Power Automate to develop automated processes that streamline operations and reduce processing times."],
+        "skills": ["SharePoint Online", "Power Platform", "JSON List Formatting"]
+    },
+    {
+        "id": "2", 
+        "jobTitle": "Project Analyst",
+        "company": "Precise Systems, Inc.",
+        "location": "Patuxent River, MD",
+        "startDate": "2021-08-21",
+        "endDate": "2021-12-31", 
+        "currentPosition": false,
+        "description": ["Coordinated and executed the transfer of critical organization data from the contractor intranet to a local hard drive, while analyzing SharePoint libraries to identify and eliminate duplicate data. Additionally, collaborated with team leads to archive data from SharePoint libraries and provided support to end users."],
+        "skills": ["SharePoint"]
+    },
+    {
+        "id": "3", 
+        "jobTitle": "Office Automation Assistant",
+        "company": "Naval Hospital Jacksonville", 
+        "location": "Jacksonville, FL",
+        "startDate": "2021-01-03", 
+        "endDate": "2021-06-20",
+        "currentPosition": false, 
+        "description": ["Developed a SharePoint workflow system to streamline document routing and eliminate backlog. Managed the Patient Safety Award database in Microsoft Access, tracked safety trends through dashboards, and maintained SharePoint pages. Implemented data integrity procedures and analyzed data to produce directorate reports."], 
+        "skills": ["SharePoint", "Microsoft Access"]
+    },
+    {
+        "id": "4", 
+        "jobTitle": "Front Office Coordinator",
+        "company": "Clay Surgery Center", 
+        "location": "Orange Park, FL",
+        "startDate": "2019-02-01", 
+        "endDate": "2020-12-31",
+        "currentPosition": false, 
+        "description": ["Developed a document tracking system that reduced same-day cancellations by 30 percent, conducted compliance audits, analyzed reimbursement trends, and professionally addressed physician and patient concerns."], 
+        "skills": ["Excel"]
+    }
+]
