@@ -6,7 +6,7 @@
             {"title": "CosmicQuarry", "url": "https://saralynleonard.github.io/final-project/#!/"},
             {"title": "GitHub Repo", "url": "https://github.com/saralynleonard/final-project"}
         ], 
-        "description": "Final project for CS70, Rich Internet Application Development.", 
+        "description": "Final project for CS701, Rich Internet Application Development.", 
         "skills": ["AngularJS", "Google Maps API", "JSON", "Local Storage"],
         "dateCompleted": "October 2024"
     },
