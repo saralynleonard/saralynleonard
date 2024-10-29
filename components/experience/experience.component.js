@@ -16,7 +16,7 @@ angular.module('experience')
                     self.experience = res.data
                 })
 
-                $http.get('/data/education.json').then(function(res) {
+                $http.get('data/education.json').then(function(res) {
                     self.education = res.data
                 })
             } 
