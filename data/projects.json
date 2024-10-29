@@ -1,7 +1,23 @@
 [
     {
         "id": 1,
-        "name": "CosmicQuarry",
-        "url": ""
+        "name": "CosmicQuarry - CS701",
+        "links": [
+            {"title": "CosmicQuarry", "url": "https://saralynleonard.github.io/final-project/#!/"},
+            {"title": "GitHub Repo", "url": "https://github.com/saralynleonard/final-project"}
+        ], 
+        "description": "Final project for CS70, Rich Internet Application Development.", 
+        "skills": ["AngularJS", "Google Maps API", "JSON", "Local Storage"],
+        "dateCompleted": "October 2024"
+    },
+    {
+        "id": 2, 
+        "name": "CosmicQuarry - CS602", 
+        "links": [
+            {"title": "GitHub Repo", "url": "https://github.com/saralynleonard/CS602_TermProject"}
+        ],
+        "description": "Final project built for CS602, Server-Side Web Development.", 
+        "skills": ["Node.js", "Express.js", "Handlebars.js", "MongoDB", "REST APIs"], 
+        "dateCompleted": "August 2024"
     }
 ]

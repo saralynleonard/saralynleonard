@@ -6,6 +6,9 @@
         <li ng-class="{active: $ctrl.currentTab === 'education'}">
             <a href="" ng-click="$ctrl.select('education')">Education</a>
         </li>
+        <li ng-class="{active: $ctrl.currentTab === 'projects'}">
+            <a href="" ng-click="$ctrl.select('projects')">Projects</a>
+        </li>
     </ul>
 
     <section id="experience" ng-show="$ctrl.currentTab === 'experience'">
@@ -46,5 +49,27 @@
                 </li>
             </div>
         </ul>
+    </section>
+
+    <section id="projects" ng-show="$ctrl.currentTab === 'projects'">
+        <h2>Projects</h2>
+        <ul>
+            <div ng-repeat="project in $ctrl.projects" class="card">
+                <li id="project">
+                    <a href="">{{project.name}}</a>
+                    <p><i class="fa-sharp fa-light fa-location-dot"></i>{{project.dateCompleted}}</p>
+                    <p>{{project.description}}</p>
+                    <ul class="skills">
+                        <li ng-repeat="skills in project.skills">
+                            <i class="fa-sharp fa-light fa-tag"></i>{{skills}}
+                        </li>
+                    </ul>
+                    <ul class="links">
+                        <li ng-repeat="link in project.links" id="url"><a href="{{link.url}}" target="_blank"><i class="fa-sharp fa-light fa-link"></i>{{link.title}}</a></li>
+                    </ul>
+                </li>
+            </div>
+        </ul>
+
     </section>
 </main>

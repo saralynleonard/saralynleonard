@@ -6,7 +6,7 @@ angular.module('experience')
             let self = this
             self.experience = []
             self.education = []
-            let projects = []
+            self.projects = []
 
             self.currentTab = 'experience'
 
@@ -18,6 +18,10 @@ angular.module('experience')
 
                 $http.get('data/education.json').then(function(res) {
                     self.education = res.data
+                })
+
+                $http.get('data/projects.json').then(function(res) {
+                    self.projects = res.data
                 })
             } 
 
