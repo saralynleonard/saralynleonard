@@ -24,45 +24,55 @@ main {
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     padding: 5px 12px;
 }
 
-.header-icon {
+.footer-icon {
     color: #f1f1f1;
-    padding: 2px;
+    padding: 4px;
+    font-size: x-large;
     text-decoration: none;
     transition: ease-in .1s;
+    margin-bottom: 50px;
 }
 
-.header-icon:hover {
+.footer-icon:hover {
     color: rgb(64, 224, 208);
 }
 
-.tabs {
+/* .tabs {
     position: absolute;
     margin-top: 30px;
     width: 20%;
     align-items: flex-start;
+} */
+
+.tabs {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.tabs a {
+    text-decoration: underline;
+    color: #f1f1f1;
 }
 
 .tabs li {
     padding: 8px;
 }
 
-.tabs a {
-    color: #f1f1f1;
-    text-decoration: none;
-}
-
-.tabs li {
+/* .tabs li {
     transition: ease-in .15s;
 }
 
 .tabs li:hover {
     transform:translate(4px);
     text-decoration: underline;
-}
+} */
 
 #experience, #education, #projects {
     display: flex;
@@ -113,6 +123,7 @@ li #job, li #degree, li #poject {
     font-weight: 600;
     font-size: 1.2em;
     font-family: "Crimson Pro", serif;
+    user-select: none;
 }
 
 #job p, #degree p, #project p {
@@ -190,6 +201,10 @@ footer p {
     text-align: center;
 }
 
+.footer-icons {
+    margin-bottom: 15px;
+}
+
 @media (max-width: 800px) {
     .tabs {
         position: relative;
@@ -197,6 +212,10 @@ footer p {
         flex-direction: row;
         width: 100%;
         justify-content: center;
+        margin-bottom: 15px;
+    }
+    .tabs a {
+        text-decoration: underline;
     }
     .tabs li:hover {
         transform: none;
