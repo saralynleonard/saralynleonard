@@ -20,5 +20,15 @@
         "description": "Final project built for CS602, Server-Side Web Development.", 
         "skills": ["Node.js", "Express.js", "Handlebars.js", "MongoDB", "REST APIs"], 
         "dateCompleted": "August 2024"
+    },
+    {
+        "id": 3, 
+        "name": "Saralyn Leonard v1", 
+        "links": [
+            {"title": "Saralyn Leonard v1", "url": "https://saralynleonard.github.io/saralyn-leonardv1/"}
+        ],
+        "description": "First personal website built in 2022 using HTML, CSS, and JavaScript.", 
+        "skills": ["HTML", "CSS", "Javascript"],
+        "dateCompleted": "November 2022"
     }
 ]
