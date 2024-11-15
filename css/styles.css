@@ -29,6 +29,37 @@ header {
     font-size: x-large;
 }
 
+.header-container {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+position: relative;
+color: #40e0d0;
+font-weight: 500;
+display: inline-block;
+padding: 30px;
+font-size: 2.5rem;
+margin-right: 20px;
+/* background-image: linear-gradient(45deg, #40e0d0, #ffcc99);*/
+/* -webkit-background-clip: text;  */
+
+}
+
+#logo::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #40e0d0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    /* z-index: -1; */
+}
+
 .footer-icon {
     color: #f1f1f1;
     padding: 4px;
@@ -39,7 +70,7 @@ header {
 }
 
 .footer-icon:hover {
-    color: rgb(64, 224, 208);
+    color: #40e0d0;
 }
 
 /* .tabs {
@@ -60,10 +91,22 @@ header {
 .tabs a {
     text-decoration: underline;
     color: #f1f1f1;
+    transition: color .2s ease;
 }
 
 .tabs li {
     padding: 8px;
+}
+
+.tabs li.active a {
+    color: #40e0d0;
+}
+
+#about-paragraph {
+    font-size: large;
+    padding: 20px;
+    text-align: center;
+    max-width: 600px;
 }
 
 /* .tabs li {
@@ -75,7 +118,7 @@ header {
     text-decoration: underline;
 } */
 
-#experience, #education, #projects {
+#about, #experience, #education, #projects {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -223,6 +266,12 @@ footer p {
     }
     .card {
         margin: 20px;
+    }
+    header h1 {
+        display: none;
+    }
+    #about h2 {
+        text-align: center;
     }
 }
 

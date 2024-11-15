@@ -8,7 +8,7 @@ angular.module('experience')
             self.education = []
             self.projects = []
 
-            self.currentTab = 'experience'
+            self.currentTab = 'about'
 
 
             self.loadData = function() {

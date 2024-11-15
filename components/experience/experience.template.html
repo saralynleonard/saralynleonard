@@ -1,5 +1,8 @@
 <main>
     <ul class="tabs">
+        <li ng-class="{active: $ctrl.currentTab === 'about'}">
+            <a href="" ng-click="$ctrl.select('about')">About</a>
+        </li>
         <li ng-class="{active: $ctrl.currentTab === 'experience'}">
             <a href="" ng-click="$ctrl.select('experience')">Experience</a>
         </li>
@@ -10,6 +13,14 @@
             <a href="" ng-click="$ctrl.select('projects')">Projects</a>
         </li>
     </ul>
+
+    <section id="about" ng-show="$ctrl.currentTab === 'about'">
+        
+        <p id="about-paragraph">
+            Hi, I'm Saralyn, a passionate web developer with a love for creating clean, user-friendly websites that make an impact. While I’m relatively new to the development world, I’m constantly learning and growing, driven by curiosity and a drive to improve. When I’m not coding, you can find me experimenting in the kitchen, planning the next travel adventure, or getting lost in a good book. I believe the same creativity that goes into crafting a delicious dish or a captivating story also translates into building intuitive digital experiences. My goal is to blend my technical skills with my creative passions to build websites that are both functional and engaging.
+        </p>
+        
+    </section>
 
     <section id="experience" ng-show="$ctrl.currentTab === 'experience'">
         <h2 class="section-title">Experience</h2>

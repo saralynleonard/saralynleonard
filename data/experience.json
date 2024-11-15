@@ -18,7 +18,7 @@
         "endDate": "2021-12-31", 
         "currentPosition": false,
         "description": ["Coordinated and executed the transfer of critical organization data from the contractor intranet to a local hard drive, while analyzing SharePoint libraries to identify and eliminate duplicate data. Additionally, collaborated with team leads to archive data from SharePoint libraries and provided support to end users."],
-        "skills": ["SharePoint"]
+        "skills": ["SharePoint", "Data Migration"]
     },
     {
         "id": "3", 
